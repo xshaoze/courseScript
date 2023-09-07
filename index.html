@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>武软学院-刷课脚本</title>
+
+    <link rel="shortcut icon" href="http://coursescript.mtail.cn/img/favicon.svg" type="image/x-icon">
+
+    <style>
+        @font-face {
+            font-family: "yunFengHanChanTi";
+            src: url(http://coursescript.mtail.cn/font/yunFengHanChanTi.ttf);
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1d1e1f;
+        }
+
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+
+    <style>
+        hr{
+            border: 1px solid rgb(73, 73, 73)
+            
+        }
+        nav.navbar {
+            position: fixed;
+            height: 60px;
+            width: 100%;
+            box-shadow: 0px 2px 8px;
+            background-color: #1d1e1f;
+        }
+
+        nav.navbar .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        nav .title {
+            font-size: 30px;
+        }
+
+        .container ul {
+            display: flex;
+        }
+
+        .container li {
+            font-family: yunFengHanChanTi;
+            color: #ffffff;
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+        .msg{
+            width: 80%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li class="img">
+                    <img src="http://coursescript.mtail.cn/img/favicon.svg" alt="logo" srcset="" width="30px" />
+                </li>
+                <li><a href="#" class="title">刷课脚本</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div style="padding-top: 56px;">
+        <hr style="width: 80%;">
+    </div>
+    <div class="msg">
+    </div>
+    <div style="width: 80%;margin: 0 auto;color: #ffffff;">
+        <table style="width: 80%;text-align: center;margin: 0 auto; border-spacing: 5px;">
+            <tr>
+                <th>脚本使用网站</th>
+                <th>脚本说明</th>
+                <th>脚本地址</th>
+                <th>脚本最新版本</th>
+                <th>时间</th>
+                <th>备注</th>
+            </tr>
+            <tr>
+                <td><a href="http://wrggk.whvcse.edu.cn/web/Index5m.aspx" target="_blank" style="text-decoration: underline; color: aqua;">武软公共课</a></td>
+                <td> 本脚本暂不能答题</td>
+                <td> <a href="http://coursescript.mtail.cn/script/武软公共课_刷课脚本.user.js"  target="_blank" style="color: rgb(0, 255, 0);text-decoration: underline;">点击安装</a></td>
+                <td>v0.1</td>
+                <td>2023年9月11日</td>
+                <td>目前只有这一个晚点加,版本可能更新不及时</td>
+            </tr>
+            
+        </table>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <footer style="width: 80%;margin: 0 auto;">
+        <hr>
+        <div style="text-align: center; width: 80%; margin: 20px auto;color: #ffffff;">
+            页面比较难看请勿在意-实用为主(其实是图省事)
+        </div>
+        <div style="text-align: center; width: 80%; margin: 20px auto;color: #ffffff;">
+            © MystiaTail-灵尾 
+        </div>
+        <div style="text-align: center; width: 80%; margin: 20px auto;color: #ffffff;">
+            联系我：[<a href="" onclick="copyToClipboard('xshaoze@qq.com')" style="color: aqua;text-decoration: underline;">点击复制xshaoze@qq.com</a>]
+        </div>
+        
+    </footer>
+</body>
+<script>
+    function copyToClipboard(text) {
+        // 创建一个临时的 textarea 元素
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+    
+        // 选择并复制文本
+        textarea.select();
+        document.execCommand('copy');
+    
+        // 移除临时的 textarea 元素
+        document.body.removeChild(textarea);
+    
+        alert('已复制到剪贴板');
+    }
+</script>
+</html>
